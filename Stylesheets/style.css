@@ -1,7 +1,7 @@
 body {
   background-color: #f4f3e4;
   color: rgb(53, 47, 47);
-}
+} /*styling for the background and text*/
 h1 {
   text-align: center;
   font-size: 45px;
@@ -13,4 +13,4 @@ p {
 }
 footer {
   clear: both;
-}
+} /* for my footer to appear at the bottom of the screen*/
