@@ -5,68 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Stylesheets/style.css" />
-    <title>Treaty One</title>
+    <title>Home Page</title>
     <style>
+      /* code from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html */
       .container {
         display: flex;
         align-items: center;
         justify-content: center;
       }
+      /*  */
 
-      img {
-        border-radius: 50px;
-        margin: 30px 75px 30px 95px;
-      }
-
+      /* code from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html */
       .image {
         flex-basis: 40%;
+        border-radius: 85px;
+        margin: 30px 75px 30px 95px;
       }
-
+      /* so that  */
       .text {
         padding-right: 100px;
         padding-left: 30px;
         padding-bottom: 40px;
       }
-      h3 {
-        text-align: center;
-        font-size: 2.9rem;
-      }
+
+      /* makes it so that id with this name will apear to be 70% see through */
       #opacity {
-        opacity: 0.75;
+        opacity: 0.75px;
       }
-      /* .treat {
-         float: center;
-         width: 700px;
-         height: 200px;
-         background-color: #460000;
-         border: 3px solid #460000;
-         margin-left: 85px;
-         border-radius: 50px;
-       }*/
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Index</a></li>
-        <li><a href="second.html">Second Webpage</a></li>
-        <li><a href="third.html">Third</a></li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="second.html">The Beginning</a></li>
+        <li><a href="third.html">Treaty 1 Today</a></li>
       </ul>
     </nav>
+    <header><h1>Treaty One</h1></header>
     <main>
-      <h1>Treaty One</h1>
-      <p style="font-size: 1.2rem; padding: 15px 75px 20px 95px">
-        <span>
-          We acknowledge being on Treaty One territory and commit to moving
-          forward in partnership with Indigenous communities towards
-          reconciliation. We recognize that we are gathered on Treaty 1
-          Territory and that Manitoba is located on the Treaty Territories and
-          ancestral lands of the Anishinaabeg, Anishininewuk, Dakota Oyate,
-          Denesuline, and Nehethowuk Nations.
-        </span>
+      <p id="land-rights">
+        We acknowledge being on Treaty One territory and commit to moving
+        forward in partnership with Indigenous communities towards
+        reconciliation. We recognize that we are gathered on Treaty 1 Territory
+        and that Manitoba is located on the Treaty Territories and ancestral
+        lands of the Anishinaabeg, Anishininewuk, Dakota Oyate, Denesuline, and
+        Nehethowuk Nations.
+        <a
+          href="https://www.uwinnipeg.ca/english/english-department-land-acknowledgment.html"
+          target="_blank">
+          *Source For Land Acknowledgment*
+        </a>
       </p>
 
-      <div class="container">
+      <section class="container">
         <div class="image">
           <img
             src="images/NumberedTreatiesMap (1).jpg"
@@ -74,7 +66,9 @@
             height="300px"
             alt="a map of all the Treaties in Canada and the area they occupy with the year it was created." />
         </div>
+
         <div class="text">
+          <a href="second.html"> <h2>The Beginning</h2> </a>
           <p>
             Treaty No. 1 was the first of the numbered treaties that helped
             establish Western Canada, and was made with the understanding that
@@ -88,14 +82,14 @@
             made between 1871 and 1921.
           </p>
         </div>
-      </div>
-      <div class="container">
+      </section>
+      <section class="container">
         <div class="image">
           <img
-            src="images/seven-nations-images.jpg"
+            src="images/flag.gif"
             width="370"
             height="300"
-            alt="shows all seven first nations and their flag/symbol in a row" />
+            alt="shows the flag of the first nations in winnipeg" />
         </div>
         <div class="text">
           <p>
@@ -106,15 +100,34 @@
             Swan Lake First Nations.
           </p>
         </div>
-      </div>
-      <img
-        src="images/gathering-image.jpeg"
-        id="opacity"
-        width="1065"
-        height="270"
-        alt="a black and white picture of a group of First Nations people sitting in a circle with one of them standing up and talking to the audience." />
+      </section>
+      <section class="container">
+        <div class="image">
+          <img
+            src="images/treaty-1-celebration.webp"
+            width="370"
+            height="300"
+            alt="a group of people" />
+        </div>
+        <div class="text">
+          <a href="third.html"><h2>Treaties Today</h2></a>
+          <p>
+            The Master Planning of the former Kapyong Barracks is a landmark
+            project not only for the Treaty One First Nations, but also for
+            Winnipeg, Manitoba, and Canada, for generations to come.
+            <a href="https://treaty1.ca/kapyong/"> Kapyong Barracks </a>
+          </p>
+        </div>
+      </section>
+      <section id="sources-for-webpage">
+        <a
+          href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
+          target="_blank">
+          Treaty One Nation and Government of Canada Commemorate 150th
+          anniversary of Treaty No. 1
+        </a>
+      </section>
     </main>
-    <footer>&#169; Adeola Yusuf</footer>
-    <!--copy right-->
+    <footer><p>&#169; Adeola Yusuf</p></footer>
   </body>
 </html>
