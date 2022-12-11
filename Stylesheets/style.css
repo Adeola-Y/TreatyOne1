@@ -16,6 +16,11 @@ h1 {
 }
 h2 {
   text-align: center;
+  font-size: 3.9rem;
+}
+h3 {
+  padding-top: 15px;
+  text-align: center;
   font-size: 2.9rem;
 }
 /*  */
@@ -38,7 +43,6 @@ nav a:focus {
   color: #f4f3e4;
 }
 a {
-  text-decoration: none;
   color: #2e0404;
 }
 /*  */
@@ -51,12 +55,10 @@ nav li {
   display: inline-block;
 }
 nav a {
+  text-decoration: none;
   display: inline-block;
   padding: 17px 25px;
   background-color: #f4f3e4;
-}
-a:active {
-  font-weight: bolder;
 }
 /*  */
 #land-rights {
@@ -64,19 +66,18 @@ a:active {
   font-style: italic;
   font-size: 1.2rem;
   padding: 15px 85px 20px 95px;
+  margin: 5px 10px 5px 10px;
 }
 #sources-for-webpage {
   border-radius: 50px;
   margin: 10px 10px 10px 90px;
   width: 1100px;
   height: 200px;
-  background-color: #2e0404;
+  background-color: #e1dfcc;
 }
 #sources-for-webpage a {
   display: inline-block;
-  position: absolute;
-
-  /*bottom: 50%;*/
-  transform: translate(-50%, -50%);
-  color: #121212;
+  margin-left: 105px;
+  font-weight: bold;
+  text-align: center;
 }
