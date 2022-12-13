@@ -1,4 +1,10 @@
-/*  */
+/*  
+ This styles everything inside the body tag to have abbackground color of #f4f3e4
+ text color to #2e0404. Changed the font to arial and if that doesn't work helvetica 
+ with sans-serif font. Have the size of font be relative to the size of the root element
+ line height was used to set the distance between lines of text in the body tag have the distance
+ of each letter away from eachother to be set at 0.1 rem and word spacing be the default normal 
+*/
 body {
   background-color: #f4f3e4;
   color: #2e0404;
@@ -8,31 +14,42 @@ body {
   letter-spacing: 0.1rem;
   word-spacing: normal;
 }
-/*  */
+
+/*  
+have it so that my all my h1 tag is centered has a text size of 4.9 rem 
+and the color of to be changed to #460000.
+*/
 h1 {
   text-align: center;
   font-size: 4.9rem;
   color: #460000;
 }
+/*
+to have all my h2 tags have text to be centered and a text size of 3.9rem
+*/
 h2 {
   text-align: center;
   font-size: 3.9rem;
 }
+/* 
+have it so that all tags with h3 will 15px's of space on the top of the element
+the text will be centered and a text size of 2.9 rem 
+ */
 h3 {
   padding-top: 15px;
   text-align: center;
   font-size: 2.9rem;
 }
-/*  */
+/*  so that all my paragraph tags have their text centered and a text size of 1.6 rem*/
 p {
   text-align: center;
   font-size: 1.6rem;
 }
-/*  */
+/* Got this code from Mr. Coppens I am not sure I know what it does */
 footer {
   clear: both;
 }
-/*  */
+/* idk yet  */
 html {
   font-size: 62.5%;
 }
