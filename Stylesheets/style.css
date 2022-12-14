@@ -53,7 +53,12 @@ footer {
 html {
   font-size: 62.5%;
 }
-
+/* code from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 nav a:hover,
 nav a:focus {
   background-color: #2e0404;
@@ -90,7 +95,7 @@ nav a {
   margin: 10px 10px 10px 90px;
   width: 1100px;
   height: 200px;
-  background-color: #e1dfcc;
+  background-color: #979585;
 }
 #sources-for-webpage a {
   display: inline-block;
