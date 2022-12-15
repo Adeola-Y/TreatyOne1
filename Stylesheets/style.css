@@ -64,6 +64,7 @@ nav a:focus {
   background-color: #2e0404;
   color: #f4f3e4;
 }
+/* all anchors will have a font color of this specific one */
 a {
   color: #2e0404;
 }
@@ -90,6 +91,9 @@ nav a {
   padding: 15px 85px 20px 95px;
   margin: 5px 10px 5px 10px;
 }
+/* this styles the id of sources-for-webpage to have 5opx
+of rounded corners have margin on all four sides a width of 
+ 1100px and high up by 200px with a different background color */
 #sources-for-webpage {
   border-radius: 50px;
   margin: 10px 10px 10px 90px;
@@ -97,6 +101,9 @@ nav a {
   height: 200px;
   background-color: #979585;
 }
+/* this styles the element with all the anchors in the id of sources-for-webpage
+to be displayed as an inline block move 105px to the left have the text be bolded
+and align the anchors to the middle/center */
 #sources-for-webpage a {
   display: inline-block;
   margin-left: 105px;
