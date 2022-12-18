@@ -17,39 +17,40 @@ body {
 
 /*  
 have it so that my all my h1 tag is centered has a text size of 4.9 rem 
-and the color of to be changed to #460000.
+and the color of to be changed to #600202.
 */
 h1 {
   text-align: center;
   font-size: 4.9rem;
-  color: #460000;
+  color: #600202;
 }
 /*
-to have all my h2 tags have text to be centered and a text size of 3.9rem
+to have all my h2 tags have text to be centered and a text size of 3.9rem with the text color as #600202
 */
 h2 {
   text-align: center;
   font-size: 3.9rem;
+  color: #600202;
 }
 /* 
 have it so that all tags with h3 will 15px's of space on the top of the element
-the text will be centered and a text size of 2.9 rem 
+the text will be centered and a text size of 2.9 rem  with the text color as #600202
  */
 h3 {
   padding-top: 15px;
   text-align: center;
   font-size: 2.9rem;
+  color: #600202;
 }
-/*  so that all my paragraph tags have their text centered and a text size of 1.6 rem*/
+/*  so that all my paragraph tags have their text centered */
 p {
   text-align: center;
-  font-size: 1.6rem;
 }
-/* Got this code from Mr. Coppens I am not sure I know what it does */
+/* Got help from Mr. Coppens, not 100% sure what it does*/
 footer {
   clear: both;
 }
-/* idk yet  */
+/* sets my root element to 62.5%  */
 html {
   font-size: 62.5%;
 }
@@ -59,6 +60,8 @@ html {
   align-items: center;
   justify-content: center;
 }
+/* this styles the anchors in my nav tag so that when a mouse is over it or is being pressed by 
+the tab key the background color will change to #2e0404 and font color to #f4f3e4*/
 nav a:hover,
 nav a:focus {
   background-color: #2e0404;
@@ -68,26 +71,33 @@ nav a:focus {
 a {
   color: #2e0404;
 }
-/*  */
+/*  this styles the items in my list inside the nav to have no style o be shown and a padding of zero*/
 nav ul {
   list-style: none;
   padding: 0;
 }
+/* this styles the list in my nav to have 5px of margin on the top and bottom while none 
+on the left and right  */
 nav li {
   margin: 5px 0;
   display: inline-block;
 }
+/* this styles all anchors in my nav tag to have no line underneath be siplayed as an inline block
+so the links can be beside eachother padding of 17px on the top and bottom and 25px on the left and 
+right for space inside the element and a different background color */
 nav a {
   text-decoration: none;
   display: inline-block;
   padding: 17px 25px;
   background-color: #f4f3e4;
 }
-/*  */
+/* this styles the element with an id of #land-rights to have the text be bolded change the 
+font style to itlaticed  padding on all four sides to create space inside the element and margin
+ on all four sides as well to create space around the element */
 #land-rights {
   font-weight: bold;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 15px 85px 20px 95px;
   margin: 5px 10px 5px 10px;
 }
