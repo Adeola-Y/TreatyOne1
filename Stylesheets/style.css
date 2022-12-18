@@ -2,7 +2,7 @@
  This styles everything inside the body tag to have abbackground color of #f4f3e4
  text color to #2e0404. Changed the font to arial and if that doesn't work helvetica 
  with sans-serif font. Have the size of font be relative to the size of the root element
- line height was used to set the distance between lines of text in the body tag have the distance
+ line height was used to set the distance between lines of text in the body tag. have the distance
  of each letter away from eachother to be set at 0.1 rem and word spacing be the default normal 
 */
 body {
@@ -50,7 +50,8 @@ p {
 footer {
   clear: both;
 }
-/* sets my root element to 62.5%  */
+/* sets my root element to 62.5% which converts to 10px on most browsers to make the 
+rem calculations easier to convert */
 html {
   font-size: 62.5%;
 }
@@ -71,13 +72,15 @@ nav a:focus {
 a {
   color: #2e0404;
 }
-/*  this styles the items in my list inside the nav to have no style o be shown and a padding of zero*/
+/* this styles the items in my list inside the nav to have no 
+style and be shown and a padding of zero on all sides*/
 nav ul {
   list-style: none;
   padding: 0;
 }
 /* this styles the list in my nav to have 5px of margin on the top and bottom while none 
-on the left and right  */
+ on the left and right and making the lists to be displayed as an in-line block so they 
+ can be put beside eachother */
 nav li {
   margin: 5px 0;
   display: inline-block;
@@ -109,7 +112,7 @@ of rounded corners have margin on all four sides a width of
   margin: 10px 10px 10px 90px;
   width: 1100px;
   height: 200px;
-  background-color: #979585;
+  background-color: #afaf99;
 }
 /* this styles the element with all the anchors in the id of sources-for-webpage
 to be displayed as an inline block move 105px to the left have the text be bolded
