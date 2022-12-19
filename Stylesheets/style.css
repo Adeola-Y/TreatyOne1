@@ -109,7 +109,7 @@ of rounded corners have margin on all four sides a width of
  1100px and high up by 200px with a different background color */
 #sources-for-webpage {
   border-radius: 50px;
-  margin: 10px 10px 10px 90px;
+  margin: 10px 10px 10px 95px;
   width: 1100px;
   height: 200px;
   background-color: #afaf99;
