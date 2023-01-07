@@ -99,16 +99,18 @@ nav ul {
   list-style: none;
   padding: 0;
 }
-/* this styles the list in my nav to have 5px of margin on the top and bottom while none 
- on the left and right and making the lists to be displayed as an in-line block so they 
- can be put beside eachother */
+/* 
+   this styles the list in my nav to have 5px of margin on the top and bottom while none 
+    on the left and right and making the lists to be displayed as an in-line block so they 
+    can be put beside eachother */
 nav li {
-  margin: 5px 0;
+  margin: 5px 15px;
   display: inline-block;
 }
-/* this styles all anchors in my nav tag to have no line underneath be siplayed as an inline block
-so the links can be beside eachother padding of 17px on the top and bottom and 25px on the left and 
-right for space inside the element and a different background color */
+/* 
+   this styles all anchors in my nav tag to have no line underneath be siplayed as an inline block
+   so the links can be beside eachother padding of 17px on the top and bottom and 25px on the left and 
+   right for space inside the element and a different background color */
 nav a {
   text-decoration: none;
   display: inline-block;
@@ -122,8 +124,8 @@ font style to itlaticed  padding on all four sides to create space inside the el
   font-weight: bold;
   font-style: italic;
   font-size: 1.4rem;
-  padding: 15px 85px 20px 95px;
-  margin: 5px 10px 5px 10px;
+  padding: 15px 95px 20px 95px;
+  margin: 10px 20px 90px 20px;
 }
 /* this styles the id of sources-for-webpage to have 5opx
 of rounded corners have margin on all four sides a width of 
@@ -133,6 +135,8 @@ of rounded corners have margin on all four sides a width of
   margin: 10px 10px 10px 95px;
   width: 1100px;
   height: 200px;
+  /* width: 87%; */
+
   background-color: #afaf99;
 }
 /* this styles the element with all the anchors in the id of sources-for-webpage
