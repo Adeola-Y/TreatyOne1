@@ -1,4 +1,5 @@
-/* I chose the colors yellow and red because they both are bright and intense which is why they
+/* 
+  I chose the colors yellow and red because they both are bright and intense which is why they
   bring out such strong feelings which is what I wanted to happen. Yellow represnts happiness 
   and hope but can also be a sign of caution which is something I wanted to be prevalent which is
   why it is my backgroun color. Red is associated with courage, sacrifice and being brave which is
@@ -7,7 +8,8 @@
   colors represent Indigenous peoples and what thy've gone through while still being resilient. 
   I used sans serif font because it is modern, clean, and is easier to read. In the beginning I was
   creating a website for people around my age and I wanted a font type that is modern but trustworthy 
-  and sans serif font can be used for multiple different purposes.  */
+  and sans serif font can be used for multiple different purposes.  
+*/
 
 /* line height was used to set the distance between lines of text in the body tag. */
 * {
@@ -15,9 +17,9 @@
 }
 
 /*  
- This styles everything inside the body tag to have a background color of #f4f3e4
-   text color to #2e0404. Changed the font to arial and if that doesn't work helvetica 
-   with sans-serif font. Have the size of font be relative to the size of the root element
+  This styles everything inside the body tag to have a background color of #f4f3e4
+  text color to #2e0404. Changed the font to arial and if that doesn't work helvetica 
+  with sans-serif font. Have the size of font be relative to the size of the root element
   have the distance of each letter away from eachother to be set at 0.1 rem and word spacing be 
   the default normal 
 */
@@ -31,16 +33,17 @@ body {
 }
 
 /*  
-have it so that my all my h1 tag is centered has a text size of 4.9 rem 
-and the color of to be changed to #600202.
+  have it so that my all my h1 tag is centered has a text size of 4.9 rem 
+  and the color of to be changed to #600202.
 */
 h1 {
   text-align: center;
   font-size: 4.9rem;
   color: #600202;
 }
-/*
-to have all my h2 tags have text to be centered and a text size of 3.9rem with the text color as #600202
+/*  
+  to have all my h2 tags have text to be centered and a text size of 3.9rem with 
+  the text color as #600202
 */
 h2 {
   text-align: center;
@@ -48,8 +51,8 @@ h2 {
   color: #600202;
 }
 /* 
-have it so that all tags with h3 will 15px's of space on the top of the element
-the text will be centered and a text size of 2.9 rem  with the text color as #600202
+  have it so that all tags with h3 will 15px's of space on the top of the element
+  the text will be centered and a text size of 2.9 rem  with the text color as #600202
  */
 h3 {
   padding-top: 15px;
@@ -61,18 +64,21 @@ h3 {
 p {
   text-align: center;
 }
-/* Got help from Mr. Coppens
-   makes it so that other elements
-    dont float on both left and right
-    sides to prevent overlapping of
-    other elements 
+/* 
+  Got help from Mr. Coppens,
+  makes it so that other elements
+  dont float on both left and right
+  sides to prevent overlapping of
+  other elements 
   
 */
 footer {
   clear: both;
 }
-/* sets my root element to 62.5% which converts to 10px on most browsers to make the 
-rem calculations easier to convert */
+/* 
+  sets my root element to 62.5% which converts to 10px on most browsers to make the 
+  rem calculations easier to convert 
+*/
 html {
   font-size: 62.5%;
 }
@@ -82,8 +88,10 @@ html {
   align-items: center;
   justify-content: center;
 }
-/* this styles the anchors in my nav tag so that when a mouse is over it or is being pressed by 
-the tab key the background color will change to #2e0404 and font color to #f4f3e4*/
+/*
+  this styles the anchors in my nav tag so that when a mouse is over it or is being pressed by 
+  the tab key the background color will change to #2e0404 and font color to #f4f3e4
+*/
 nav a:hover,
 nav a:focus {
   background-color: #2e0404;
@@ -93,43 +101,51 @@ nav a:focus {
 a {
   color: #2e0404;
 }
-/* this styles the items in my list inside the nav to have no 
-style and be shown and a padding of zero on all sides*/
+/* 
+  this styles the items in my list inside the nav to have no 
+  style and be shown and a padding of zero on all sides
+*/
 nav ul {
   list-style: none;
   padding: 0;
 }
 /* 
-   this styles the list in my nav to have 5px of margin on the top and bottom while none 
-    on the left and right and making the lists to be displayed as an in-line block so they 
-    can be put beside eachother */
+  this styles the list in my nav to have 5px of margin on the top and bottom while none 
+  on the left and right and making the lists to be displayed as an in-line block so they 
+  can be put beside eachother 
+*/
 nav li {
   margin: 5px 15px;
   display: inline-block;
 }
 /* 
-   this styles all anchors in my nav tag to have no line underneath be siplayed as an inline block
-   so the links can be beside eachother padding of 17px on the top and bottom and 25px on the left and 
-   right for space inside the element and a different background color */
+  this styles all anchors in my nav tag to have no line underneath be siplayed as an inline block
+  so the links can be beside eachother padding of 17px on the top and bottom and 25px on the left and 
+  right for space inside the element and a different background color 
+*/
 nav a {
   text-decoration: none;
   display: inline-block;
   padding: 17px 25px;
   background-color: #f4f3e4;
 }
-/* this styles the element with an id of #land-rights to have the text be bolded change the 
-font style to itlaticed  padding on all four sides to create space inside the element and margin
- on all four sides as well to create space around the element */
+/* 
+  this styles the element with an id of #land-rights to have the text be bolded change the 
+  font style to itlaticed  padding on all four sides to create space inside the element and margin
+  on all four sides as well to create space around the element 
+*/
 #land-rights {
   font-weight: bold;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 15px 95px 20px 95px;
   margin: 10px 20px 90px 20px;
 }
-/* this styles the id of sources-for-webpage to have 5opx
-of rounded corners have margin on all four sides a width of 
- 1100px and high up by 200px with a different background color */
+/* 
+  this styles the id of sources-for-webpage to have 5opx
+  of rounded corners have margin on all four sides a width of 
+  1100px and high up by 200px with a different background color 
+ */
 #sources-for-webpage {
   border-radius: 50px;
   margin: 10px 10px 10px 95px;
@@ -137,11 +153,13 @@ of rounded corners have margin on all four sides a width of
   height: 200px;
   /* width: 87%; */
 
-  background-color: #afaf99;
+  background-color: #b6b699;
 }
-/* this styles the element with all the anchors in the id of sources-for-webpage
-to be displayed as an inline block move 105px to the left have the text be bolded
-and align the anchors to the middle/center */
+/* 
+  this styles the element with all the anchors in the id of sources-for-webpage
+  to be displayed as an inline block move 105px to the left have the text be bolded
+  and align the anchors to the middle/center 
+*/
 #sources-for-webpage a {
   display: inline-block;
   margin-left: 105px;
