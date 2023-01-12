@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="Stylesheets/style.css" />
     <title>Home Page</title>
     <style>
-      /* code from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html */
+      /* 
+      flex basis sets the beggining size of the main size of the item to 40%
+      the border radius will round the corners by 85px and create space around 
+      the element on all four sides 
+    */
       .image {
         flex-basis: 40%;
         border-radius: 85px;
         margin: 30px 75px 30px 95px;
       }
-
-      /* 
-        this styles all the elements within the class .text to have 100px
-        of extra space on the right. On the left 30px nd on the bottom 40px 
-        and this creates extra space within the borders of the element being 
-        styled  
-      */
+      /*
+    this styles all the elements within the class .text to have 100px
+    of extra space on the right. On the left 30px nd on the bottom 40px 
+    and this creates extra space within the borders of the element being 
+    styled  
+ */
       .text {
         padding-right: 100px;
         padding-left: 30px;
@@ -28,7 +31,7 @@
     </style>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="the-beginning.html">The Beginning</a></li>
