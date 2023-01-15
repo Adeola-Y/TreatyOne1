@@ -15,11 +15,72 @@
     <link rel="stylesheet" href="Stylesheets/style.css" />
     <title>The Beginning</title>
     <style>
-      #styling-for-text- {
-        margin: 15px 30px 15px 40px;
+      /*
+      this styles the element with an id of modern-day-text to have 10px
+      of space outside the element on the top and bottom while 40px of space
+      on the left and right 
+    */
+      #the-begining-text {
+        margin: 10px 30px 10px 40px;
         padding: 15px 95px 20px 95px;
       }
-      /* add tab index to your animation for the pictures */
+      /* .tooltip.expand ul {
+        list-style: none;
+      } */
+      /* Code By Webdevtrick ( https://webdevtrick.com ) */
+      .tooltip.expand li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 10px;
+        /* text-align: center; */
+      }
+      .tooltip {
+        position: relative;
+      }
+      .tooltip:before,
+      .tooltip:after {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+      }
+      .tooltip:after {
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid rgba(0, 0, 0, 0.75);
+        border-left: 6px solid transparent;
+        content: "";
+        height: 0;
+        top: 20px;
+        left: 20px;
+        width: 0;
+      }
+      .tooltip:before {
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 2px;
+        color: #fff;
+        content: attr(data-title);
+        font-size: 14px;
+        padding: 6px 10px;
+        top: 26px;
+        white-space: nowrap;
+      }
+      .tooltip.expand:before {
+        transform: scale3d(0.2, 0.2, 1);
+        transition: all 0.2s ease-in-out;
+      }
+      .tooltip.expand:after {
+        transform: translate3d(0, 6px, 0);
+        transition: all 0.1s ease-in-out;
+      }
+      .tooltip.expand:hover:before,
+      .tooltip.expand:hover:after {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+      .tooltip.expand:hover:after {
+        transition: all 0.2s 0.1s ease-in-out;
+      }
+      /* add tab index to your transition for the pictures */
     </style>
   </head>
   <body>
@@ -33,7 +94,7 @@
     <header><h1>Treaty One</h1></header>
     <main>
       <p class="land-rights">
-        We acknowledge being on Treaty One terr itory and commit to moving
+        We acknowledge being on Treaty One territory and commit to moving
         forward in partnership with Indigenous communities towards
         reconciliation. We recognize that we are gathered on Treaty 1 Territory
         and that Manitoba is located on the Treaty Territories and ancestral
@@ -42,15 +103,14 @@
       </p>
 
       <h2>The Beginning</h2>
-      <p id="styling-for-text-">
+      <p id="the-begining-text">
         Canada believed that like the United States they must expand across
         North America. While the union of the British colonies of Canada, New
-        Brunswick and Nova Scotia created a single block new Dominion of Canada
-        in 1867, most political parties had views that called for the annexation
-        of Rupert's Land, the huge territory covering the Hudson Bay watershed.
-        The rapid Expansion of the United States across the West alarmed many
-        Canadian politicians who feared that the United States would annex
-        Rupert's Land.
+        Brunswick and Nova Scotia created a new Dominion of Canada in 1867, most
+        political parties had views that called for the annexation of Rupert's
+        Land, the huge territory covering the Hudson Bay watershed. The rapid
+        Expansion of the United States across the West alarmed many Canadian
+        politicians who feared that the United States would annex Rupert's Land.
       </p>
       <section class="container">
         <div class="image-style">
@@ -69,8 +129,8 @@
             The charter was secured and full control transferred by the British
             under the Rupert's Land Act of 1868 and the Northwest Territories
             Transfer Act in 1870. The legal status of the Northwest Territories
-            being a part of Canada, the fact remained that the Territories were
-            devoid of any Canadian authority and was still the domain of
+            was a part of Canada, but the fact remained that the Territories
+            were devoid of any Canadian authority and was still the domain of
             Aboriginal people. Although the Dominion had purchased the title for
             Rupert's Land, it had no way of exerting its influence or
             jurisdiction over the area.
@@ -87,7 +147,7 @@
         </div>
         <div class="text-for-section">
           <h3>Treaties</h3>
-          <p style="">
+          <p>
             these treaties also held clauses that were very similar to many of
             the civilisation programs undertaken in central Canada. All treaties
             had clauses for schools or teachers to educate children, and
@@ -102,7 +162,7 @@
       <section class="container">
         <div class="image-style">
           <img
-            src="images/clauses.png"
+            src="images/Lnuey_Social-Posts_Treaty-Rights1.png"
             alt="move move move"
             width="370px"
             height="300px" />
@@ -123,15 +183,48 @@
           </p>
         </div>
       </section>
-      <section class="container">
-        <p>
+
+      <figure>
+        <img
+          class="img-bottom-style"
+          style="flex-basis: 40%; border-radius: 85px"
+          src="images/ExpFirAgowigiiwinanReps768x766.jpg"
+          alt="alt text something something something"
+          width="810px"
+          height="280px" />
+        <figcaption
+          style="padding: 10px 85px 20px 130px; margin: 5px 10px 5px 60px">
           Mis-koo-kenew or Red Eagle (Henry Prince), Ka-ke-ka-penais or Bird for
           ever, Na-sha-ke-penais or Flying down bird, Na-na-wa-nanaw or Centre
           of Bird's Tail, Ke-we-tayash or Flying round, Wa-ko-wush or
-          Whip-poor-will, and Oo-za-we-kwun or Yellow Quill,hhh
-        </p>
-      </section>
-
+          Whip-poor-will, and Oo-za-we-kwun or Yellow Quill; were the chiefs of
+          the seven first Nations that signed Treaty One In Lower Fort Garry.
+        </figcaption>
+      </figure>
+      <h3>Definitions</h3>
+      <ul>
+        <li class="tooltip expand" data-title="sovereignty or control.">
+          Dominion
+        </li>
+        <li
+          class="tooltip expand"
+          data-title="the forcible acquisition of one state's territory by another state.">
+          Annex
+        </li>
+        <li
+          class="tooltip expand"
+          data-title="a fixed sum of money paid to someone each year, typically for the rest of their life.">
+          Annuity
+        </li>
+        <li
+          class="tooltip expand"
+          data-title="a party that has signed an agreement, especially a country that has signed a treaty.">
+          Signatories
+        </li>
+        <li class="tooltip expand" data-title="entirely lacking or free from.">
+          Devoid
+        </li>
+      </ul>
       <section class="sources-for-webpage">
         <h3>Sources:</h3>
         <ul>

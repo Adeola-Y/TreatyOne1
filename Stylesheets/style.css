@@ -200,7 +200,15 @@ nav a {
   background-color: #eae9dc;
   margin-top: 90px;
   margin-bottom: 155px;
+  padding: 10px 15px 0px 15px;
   width: 450px;
   height: 300px;
   overflow: scroll;
+}
+/* 
+  i styled the clas of img-bottom-style to 
+  have margin on all four sides 
+*/
+.img-bottom-style {
+  margin: 7px 60px 20px 190px;
 }
