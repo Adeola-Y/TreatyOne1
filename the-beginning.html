@@ -16,23 +16,27 @@
     <title>The Beginning</title>
     <style>
       /*
-      this styles the element with an id of modern-day-text to have 10px
-      of space outside the element on the top and bottom while 40px of space
-      on the left and right 
-    */
+          this styles the element with an id of the-begining-text to have 10px
+          of space outside the element on the top and bottom while 40px of space
+          on the left and right
+        */
+
       #the-begining-text {
         margin: 10px 30px 10px 40px;
         padding: 15px 95px 20px 95px;
       }
-      /* .tooltip.expand ul {
-        list-style: none;
-      } */
-      /* Code By Webdevtrick ( https://webdevtrick.com ) */
-      .tooltip.expand li {
+      /*
+       Code By Webdevtrick ( https://webdevtrick.com )  tried changing the name
+       to tooltip-expand and would not work so i left it how it was
+      */
+      /*  the list inside tooltip expand */
+      ul {
+        margin-bottom: 40px;
+      }
+      li {
         cursor: pointer;
         display: inline-block;
         padding: 0 10px;
-        /* text-align: center; */
       }
       .tooltip {
         position: relative;
@@ -64,23 +68,68 @@
         top: 26px;
         white-space: nowrap;
       }
+      .tooltip.fade:after,
+      .tooltip.fade:before {
+        transform: translate3d(0, -10px, 0);
+        transition: all 0.15s ease-in-out;
+        -webkit-transform: translate3d(0, -10px, 0);
+        -moz-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+        -webkit-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+      }
+      .tooltip.fade:hover:after,
+      .tooltip.fade:hover:before {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
       .tooltip.expand:before {
         transform: scale3d(0.2, 0.2, 1);
+        transition: all 0.2s ease-in-out;
+        -webkit-transform: scale3d(0.2, 0.2, 1);
+        -moz-transform: scale3d(0.2, 0.2, 1);
+        transform: scale3d(0.2, 0.2, 1);
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
       }
       .tooltip.expand:after {
         transform: translate3d(0, 6px, 0);
+        transition: all 0.1s ease-in-out;
+        -webkit-transform: translate3d(0, 6px, 0);
+        -moz-transform: translate3d(0, 6px, 0);
+        transform: translate3d(0, 6px, 0);
+        -webkit-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out;
       }
       .tooltip.expand:hover:before,
       .tooltip.expand:hover:after {
         opacity: 1;
         transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
       }
       .tooltip.expand:hover:after {
         transition: all 0.2s 0.1s ease-in-out;
+        -webkit-transition: all 0.2s 0.1s ease-in-out;
+        -o-transition: all 0.2s 0.1s ease-in-out;
+        -moz-transition: all 0.2s 0.1s ease-in-out;
+        transition: all 0.2s 0.1s ease-in-out;
       }
-      /* add tab index to your transition for the pictures */
+      @media (max-width: 765px) {
+        body {
+          text-align: left;
+        }
+      }
     </style>
   </head>
   <body>
@@ -183,7 +232,7 @@
           </p>
         </div>
       </section>
-
+      <!--  I have used inline css to set the original size to 40% and a radius of 85px -->
       <figure>
         <img
           class="img-bottom-style"
@@ -192,6 +241,7 @@
           alt="alt text something something something"
           width="810px"
           height="280px" />
+        <!-- I styled my fig caption to have space created on all four sides and also on the inside -->
         <figcaption
           style="padding: 10px 85px 20px 130px; margin: 5px 10px 5px 60px">
           Mis-koo-kenew or Red Eagle (Henry Prince), Ka-ke-ka-penais or Bird for
@@ -201,30 +251,34 @@
           the seven first Nations that signed Treaty One In Lower Fort Garry.
         </figcaption>
       </figure>
-      <h3>Definitions</h3>
-      <ul>
-        <li class="tooltip expand" data-title="sovereignty or control.">
-          Dominion
-        </li>
-        <li
-          class="tooltip expand"
-          data-title="the forcible acquisition of one state's territory by another state.">
-          Annex
-        </li>
-        <li
-          class="tooltip expand"
-          data-title="a fixed sum of money paid to someone each year, typically for the rest of their life.">
-          Annuity
-        </li>
-        <li
-          class="tooltip expand"
-          data-title="a party that has signed an agreement, especially a country that has signed a treaty.">
-          Signatories
-        </li>
-        <li class="tooltip expand" data-title="entirely lacking or free from.">
-          Devoid
-        </li>
-      </ul>
+      <section>
+        <h3>Definitions</h3>
+        <ul style="text-align: center">
+          <li class="tooltip expand" data-title="sovereignty or control.">
+            Dominion
+          </li>
+          <li
+            class="tooltip expand"
+            data-title="the forcible acquisition of one state's territory by another state.">
+            Annex
+          </li>
+          <li
+            class="tooltip expand"
+            data-title="a fixed sum of money paid to someone each year, typically for the rest of their life.">
+            Annuity
+          </li>
+          <li
+            class="tooltip expand"
+            data-title="a party that has signed an agreement, or a country that has signed a treaty.">
+            Signatories
+          </li>
+          <li
+            class="tooltip expand"
+            data-title="entirely lacking or free from.">
+            Devoid
+          </li>
+        </ul>
+      </section>
       <section class="sources-for-webpage">
         <h3>Sources:</h3>
         <ul>
@@ -232,7 +286,7 @@
             <a
               href="https://www.uwinnipeg.ca/english/english-department-land-acknowledgment.html"
               target="_blank">
-              Land Acknowledgment
+              Click This Link Land Acknowledgment
             </a>
           </li>
           <li>
