@@ -30,6 +30,53 @@ body {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   word-spacing: normal;
+  /* 
+    this code is copied from mr.hardmans class when we were learing
+    about transitions and animations all i did was change the numbers 
+    slightley and add auto prefixers,
+    the opacity is set to 0 which means you can not see the website pages
+    translate positions an element vertically on the by -100px
+    a fade in animation  fades objects, in and out, over a time, the duration
+    will be o,7s ease in out willslow down the animation at the end for 0.6 s
+    and the direction will be forwardsfrom the viewer
+ */
+  opacity: 0;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  -o-animation: fade-in 0.7s ease-in-out 0.6s forwards;
+  -moz-animation: fade-in 0.7s ease-in-out 0.6s forwards;
+  -webkit-animation: fade-in 0.7s ease-in-out 0.6s forwards;
+  animation: fade-in 0.7s ease-in 0.6s forwards;
+}
+/*  
+  keyframes controls the steps in a this animation
+  in the begining it will not be seen
+  it will be positioned on the y axis by -100px
+  */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+  }
+  /* 
+    then it will transform to be seeb by setting opacity to 1 
+    then it will be 0 on the y axis at the end
+    */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
 
 /*  
@@ -175,6 +222,10 @@ nav a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   border-radius: 50px;
   width: 90%;
   background-color: #d7d7ca;

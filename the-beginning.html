@@ -26,8 +26,8 @@
         padding: 15px 95px 20px 95px;
       }
       /*
-        Code By Webdevtrick ( https://webdevtrick.com )  tried changing the name
-        to tooltip-expand and would not work so i left it how it was
+        Code By Webdevtrick ( https://webdevtrick.com )  
+        tried changing the name to tooltip-expand and would not work so i left it how it was
       */
       /*  styles the ul's to set the margin of the bottoms content to be 40px down*/
       ul {
@@ -103,20 +103,26 @@
         top: 26px;
         white-space: nowrap;
       }
-      /*  */
+      /* 
+        styles the element tooltip.fade before and after,
+        scale3d resizes the transition in 3d space.
+        the transition property all makes it so that 
+        everything that can transition will delays the 
+        animation by .15s and the timing function makes 
+        the transition have a slow end
+       */
       .tooltip.fade:after,
       .tooltip.fade:before {
         transform: translate3d(0, -10px, 0);
         transition: all 0.15s ease-in-out;
         -webkit-transform: translate3d(0, -10px, 0);
         -moz-transform: translate3d(0, -10px, 0);
-
         -webkit-transition: all 0.15s ease-in-out;
         -o-transition: all 0.15s ease-in-out;
         -moz-transition: all 0.15s ease-in-out;
       }
       /* 
-        styles the tooltip elemtn after its been hovere dand before 
+        styles the tooltip elemtn after its been hovered and before 
         its been hovered and before as well,
         opacity is set to one so you will be able to see it, 
         scale3d resizes the transition in 3d space
@@ -148,7 +154,7 @@
         this styles the tooltip element after its been expanded 
         the scale3d elemtn resizes the animation in 3d space,
         the transition property all element makes it so that everything 
-        that can transition will delays the transition by 0.1s and eases 
+        that can transition will, delays the transition by 0.1s and eases 
         in and out for the timing
         */
       .tooltip.expand:after {
