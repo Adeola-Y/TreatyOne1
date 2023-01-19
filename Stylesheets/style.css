@@ -93,6 +93,11 @@ html {
   align-items: center;
   justify-content: center;
 }
+/* 
+  styles the class navbar to have a sticky position which means it will 
+  scroll with the page untill it hits the top and then stop scrolling to stay visible
+  having a postion of top zero will make it so that its at the very top of the page
+ */
 .navbar {
   position: sticky;
   top: 0;
@@ -120,7 +125,7 @@ nav ul {
 }
 /* 
   this styles the list in my nav to have 5px of margin on the top and bottom while none 
-  on the left and right and making the lists to be displayed as an in-line block so they 
+  on the left and right and making the lists to be displayed as an inline block so they 
   can be put beside eachother 
 */
 nav li {
@@ -141,7 +146,7 @@ nav a {
 /* 
   this styles the element with an class of .land-rights to have the text be bolded change the 
   font style to itlaticed  padding on all four sides to create space inside the element and margin
-  on all four sides as well to create space around the element 
+  on all four sides as well to create space around the element with a font size of 1.6rem
 */
 .land-rights {
   font-weight: bold;
@@ -151,30 +156,40 @@ nav a {
   margin: 10px 20px 90px 20px;
 }
 /* 
-  this styles the class of sources-for-webpage to have 50px
-  of rounded corners have margin on all four sides a width of 
-  1100px and high up by 200px with a different background color 
+  styles the lists in my sources for webpage section,
+  I have made it so that my list items dont have a list
+  type and have set the width to be 80%
  */
 .sources-for-webpage li {
   list-style: none;
+  width: 80%;
 }
+/* 
+  this styles the class of sources-for-webpage to be displayed as an in-line block so the items
+  only take up as much space as they need with space for other things,changes the position relative 
+  to its fixed position move to the left 50%, repositions the element horizontally be -50% the radius of
+  the image border to be 50px with of the section to be 90% and a greyish background color
+ */
 .sources-for-webpage {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50px;
-  margin-left: 150px;
-  width: 950px;
-  height: 210px;
+  width: 90%;
   background-color: #d7d7ca;
 }
 /* 
   this styles the element with all the anchors in the class of sources-for-webpage
-  to be displayed as an inline block move 105px to the left have the text be bolded
-  and align the anchors to the middle/center 
+  to be displayed as an inline width 100% of the anchors margin 5% on the left and right
+  have the text be bolded and align the anchors to the middle/center 
 */
 .sources-for-webpage a {
   display: inline-block;
-  margin-right: 100px;
-  margin-left: 180px;
+  width: 100%;
+  margin: 0 5%;
   font-weight: bold;
+  text-align: center;
 }
 /* 
   this styles all elements with the class of image-style 
@@ -183,6 +198,8 @@ nav a {
 */
 .image-style {
   flex-basis: 40%;
+  -webkit-flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
   border-radius: 85px;
   margin-bottom: 40px;
 }
@@ -205,11 +222,4 @@ nav a {
   width: 450px;
   height: 300px;
   overflow: scroll;
-}
-/* 
-  i styled the clas of img-bottom-style to 
-  have margin on all four sides 
-*/
-.img-bottom-style {
-  margin: 7px 60px 20px 190px;
 }

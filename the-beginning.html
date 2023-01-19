@@ -16,9 +16,9 @@
     <title>The Beginning</title>
     <style>
       /*
-          this styles the element with an id of the-begining-text to have 10px
-          of space outside the element on the top and bottom while 40px of space
-          on the left and right
+        this styles the element with an id of the-begining-text to have 10px
+        of space outside the element on the top and bottom while 40px of space
+        on the left and right
         */
 
       #the-begining-text {
@@ -26,28 +26,51 @@
         padding: 15px 95px 20px 95px;
       }
       /*
-       Code By Webdevtrick ( https://webdevtrick.com )  tried changing the name
-       to tooltip-expand and would not work so i left it how it was
+        Code By Webdevtrick ( https://webdevtrick.com )  tried changing the name
+        to tooltip-expand and would not work so i left it how it was
       */
-      /*  the list inside tooltip expand */
+      /*  styles the ul's to set the margin of the bottoms content to be 40px down*/
       ul {
         margin-bottom: 40px;
       }
+      /* 
+        styles my lists to have the mouse cursor to be displayed as a pointer
+        when hovering over the element, displays the list items horizontally , and 
+        10px of padding on the left and right of all the lists
+      */
       li {
         cursor: pointer;
         display: inline-block;
         padding: 0 10px;
       }
+      /* changes the postion of the tooltip to be relative to the parents element postion */
       .tooltip {
         position: relative;
       }
+      /* 
+        styles the tooltip  before and after the transition,
+        will display the tooltip as an block which means it will 
+        take all the space from left and right. the tooltip before 
+        and after willnot be apparent, and the position will it is 
+        positioned absolutely with reference to the closest parent 
+        that has a position relative value.
+       */
       .tooltip:before,
       .tooltip:after {
         display: block;
         opacity: 0;
-        pointer-events: none;
         position: absolute;
       }
+      /* 
+        this styles the tooltip after,
+        the rightside border will have 6px of with the style be solid
+        and makes it so that the objects behind can be seen border bottom
+        with 6px width/thickness the style of border be solidn and a color
+        border left 6px thickness solid style and so that you can see  the 
+        objects behind it as well the content tag with quotes replaces it with
+        a generated value, physical height of the element with zero, top and 
+        left moved 20px and with of the element zero 
+       */
       .tooltip:after {
         border-right: 6px solid transparent;
         border-bottom: 6px solid rgba(0, 0, 0, 0.75);
@@ -58,6 +81,18 @@
         left: 20px;
         width: 0;
       }
+      /* 
+        this styles the element tooltip before,
+        background color of the popup a border radius 2px
+        the color of the text is also set  content: attr is
+        used to retrieve the value of an attribute of the 
+        selected element which would be the definition and
+        tag called data-title a font size of 14px padding 
+        on the top and bottom set to 6px and 10px on the left 
+        and right while its up top by 26px and the white space
+        element sets hwo extra space should be handled and no wrap
+        means there wont be any line breaks for the extra words
+      */
       .tooltip:before {
         background: rgba(0, 0, 0, 0.75);
         border-radius: 2px;
@@ -68,63 +103,91 @@
         top: 26px;
         white-space: nowrap;
       }
+      /*  */
       .tooltip.fade:after,
       .tooltip.fade:before {
         transform: translate3d(0, -10px, 0);
         transition: all 0.15s ease-in-out;
         -webkit-transform: translate3d(0, -10px, 0);
         -moz-transform: translate3d(0, -10px, 0);
-        transform: translate3d(0, -10px, 0);
+
         -webkit-transition: all 0.15s ease-in-out;
         -o-transition: all 0.15s ease-in-out;
         -moz-transition: all 0.15s ease-in-out;
-        transition: all 0.15s ease-in-out;
       }
+      /* 
+        styles the tooltip elemtn after its been hovere dand before 
+        its been hovered and before as well,
+        opacity is set to one so you will be able to see it, 
+        scale3d resizes the transition in 3d space
+      */
       .tooltip.fade:hover:after,
       .tooltip.fade:hover:before {
         opacity: 1;
         transform: translate3d(0, 0, 0);
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
       }
+      /* 
+        styles the class tooltip.expand before,
+        scale3d resizes the transition in 3d space, the transition
+        transition:all makes it so that all elements that can possibley 
+        transition will transition, delay the transition by o.2 s and the
+        time transition is ease-in-out
+      */
       .tooltip.expand:before {
         transform: scale3d(0.2, 0.2, 1);
         transition: all 0.2s ease-in-out;
         -webkit-transform: scale3d(0.2, 0.2, 1);
         -moz-transform: scale3d(0.2, 0.2, 1);
-        transform: scale3d(0.2, 0.2, 1);
         -webkit-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
       }
+      /* 
+        this styles the tooltip element after its been expanded 
+        the scale3d elemtn resizes the animation in 3d space,
+        the transition property all element makes it so that everything 
+        that can transition will delays the transition by 0.1s and eases 
+        in and out for the timing
+        */
       .tooltip.expand:after {
         transform: translate3d(0, 6px, 0);
         transition: all 0.1s ease-in-out;
         -webkit-transform: translate3d(0, 6px, 0);
         -moz-transform: translate3d(0, 6px, 0);
-        transform: translate3d(0, 6px, 0);
         -webkit-transition: all 0.1s ease-in-out;
         -o-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
       }
+      /* 
+        this styles the element tooltip.expand before it is hovered over
+        and after it is hovered over,
+         the opacity is set to 1 which means you will be able to see it when its not
+         activated, scale3d resizes the transition in 3d space 
+       */
       .tooltip.expand:hover:before,
       .tooltip.expand:hover:after {
         opacity: 1;
         transform: scale3d(1, 1, 1);
         -webkit-transform: scale3d(1, 1, 1);
         -moz-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
       }
+      /* 
+        this styles what the element tooltip.expand will look like after its hovered over,
+        sets it so that all elements that can transition do, delays the transition for 0.2s ,
+        the duration will be 0.1 and the timing function will ease-in-out
+       */
       .tooltip.expand:hover:after {
         transition: all 0.2s 0.1s ease-in-out;
         -webkit-transition: all 0.2s 0.1s ease-in-out;
         -o-transition: all 0.2s 0.1s ease-in-out;
         -moz-transition: all 0.2s 0.1s ease-in-out;
-        transition: all 0.2s 0.1s ease-in-out;
       }
+      /*  
+        @media will trigger only for screens that are 765px wide,
+         inside the body of the element all the textwill be aligned to the left
+      */
       @media (max-width: 765px) {
         body {
           text-align: left;
@@ -165,7 +228,7 @@
         <div class="image-style">
           <img
             src="images/ExpPolFounderingFathers.jpg"
-            alt=""
+            alt="A recreation of the painting of the founding fathers of Canada in color around a table with documents in their hands."
             width="370px"
             height="300px" />
         </div>
@@ -190,14 +253,15 @@
         <div class="image-style">
           <img
             src="images/download.jfif"
-            alt="move move move"
+            alt="A picture of a group of people sitting huddled together 
+              with two other people standing up and moving a blanket side to side"
             width="370px"
             height="300px" />
         </div>
         <div class="text-for-section">
           <h3>Treaties</h3>
           <p>
-            these treaties also held clauses that were very similar to many of
+            These treaties also held clauses that were very similar to many of
             the civilisation programs undertaken in central Canada. All treaties
             had clauses for schools or teachers to educate children, and
             agricultural implements were promised to assist Aboriginal
@@ -212,7 +276,9 @@
         <div class="image-style">
           <img
             src="images/Lnuey_Social-Posts_Treaty-Rights1.png"
-            alt="move move move"
+            alt="a picture of two people one is a settler while the other is Indigenous. The settler hands over
+                   a blanket to the Indigenous person while a dog is drawn running away with a few trees and shelter in t
+                     the background"
             width="370px"
             height="300px" />
         </div>
@@ -232,26 +298,20 @@
           </p>
         </div>
       </section>
-      <!--  I have used inline css to set the original size to 40% and a radius of 85px -->
-      <figure>
-        <img
-          class="img-bottom-style"
-          style="flex-basis: 40%; border-radius: 85px"
-          src="images/ExpFirAgowigiiwinanReps768x766.jpg"
-          alt="alt text something something something"
-          width="810px"
-          height="280px" />
-        <!-- I styled my fig caption to have space created on all four sides and also on the inside -->
-        <figcaption
-          style="padding: 10px 85px 20px 130px; margin: 5px 10px 5px 60px">
+      <section>
+        <h2>The Chiefs:</h2>
+        <!-- I styled the text to have space created on all four sides and also on the inside -->
+        <div style="padding: 10px 85px 20px 130px; margin: 5px 10px 5px 60px">
           Mis-koo-kenew or Red Eagle (Henry Prince), Ka-ke-ka-penais or Bird for
           ever, Na-sha-ke-penais or Flying down bird, Na-na-wa-nanaw or Centre
           of Bird's Tail, Ke-we-tayash or Flying round, Wa-ko-wush or
           Whip-poor-will, and Oo-za-we-kwun or Yellow Quill; were the chiefs of
           the seven first Nations that signed Treaty One In Lower Fort Garry.
-        </figcaption>
-      </figure>
+        </div>
+      </section>
+
       <section>
+        <!-- aligns these elements to appear as centered -->
         <h3>Definitions</h3>
         <ul style="text-align: center">
           <li class="tooltip expand" data-title="sovereignty or control.">
